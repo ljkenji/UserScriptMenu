@@ -1,0 +1,38 @@
+{
+  "name": "userscriptmenu",
+  "version": "1.0.2",
+  "main": "userscript.meta.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljkenji/UserScriptMenu.git"
+  },
+  "keywords": [
+    "userscript",
+    "tampermonkey",
+    "menu",
+    "floating-menu",
+    "web-extension"
+  ],
+  "author": "Lj Kenji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ljkenji/UserScriptMenu/issues"
+  },
+  "homepage": "https://github.com/ljkenji/UserScriptMenu#readme",
+  "description": "A customizable userscript that creates a floating menu on web pages with customizable action buttons",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  }
+}
