@@ -9,17 +9,17 @@ import './styles/menu.css';
 const menuItems = [
   {
     id: 'button1',
-    label: 'Button 1',
+    label: 'Thông báo',
     action: button1Action,
   },
   {
     id: 'button2',
-    label: 'Button 2',
+    label: 'Đổi màu nền',
     action: button2Action,
   },
   {
     id: 'button3',
-    label: 'Button 3',
+    label: 'Hộp thoại',
     action: button3Action,
   },
 ];

@@ -79,9 +79,17 @@ Bạn có thể tùy chỉnh giao diện bằng cách sửa đổi CSS trong fil
 
 ## Phiên bản
 
-Phiên bản hiện tại: **1.0.3**
+Phiên bản hiện tại: **1.0.4**
 
 ### Lịch sử thay đổi
+
+#### v1.0.4
+- Đổi tên các nút để phù hợp với chức năng:
+  - "Button 1" -> "Thông báo"
+  - "Button 2" -> "Đổi màu nền"
+  - "Button 3" -> "Hộp thoại"
+- Cập nhật nội dung hiển thị trong các chức năng
+- Cải thiện hộp thoại để hiển thị thông tin hệ thống
 
 #### v1.0.3
 - Cải thiện chức năng kéo thả menu:

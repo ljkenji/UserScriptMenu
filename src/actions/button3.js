@@ -1,8 +1,8 @@
-// Hành động cho nút 3
+// Hành động cho nút Hộp thoại
 export function button3Action() {
-  console.log('Nút 3 được nhấn');
+  console.log('Nút Hộp thoại được nhấn');
 
-  // Ví dụ: Tạo hộp thoại modal
+  // Tạo hộp thoại modal
   const modal = document.createElement('div');
   modal.style.position = 'fixed';
   modal.style.top = '0';
@@ -29,7 +29,7 @@ export function button3Action() {
   modalHeader.style.marginBottom = '15px';
 
   const modalTitle = document.createElement('h3');
-  modalTitle.textContent = 'Hộp thoại Nút 3';
+  modalTitle.textContent = 'Thông tin hệ thống';
   modalTitle.style.margin = '0';
 
   const closeButton = document.createElement('button');
@@ -50,12 +50,13 @@ export function button3Action() {
 
   const modalBody = document.createElement('div');
   modalBody.innerHTML = `
-    <p>Đây là hộp thoại modal được tạo bởi hành động Nút 3.</p>
-    <p>Bạn có thể sử dụng nó cho nhiều mục đích như:</p>
+    <p>Đây là hộp thoại hiển thị thông tin hệ thống.</p>
+    <p>Thông tin trình duyệt:</p>
     <ul>
-      <li>Hiển thị thông tin</li>
-      <li>Thu thập dữ liệu người dùng</li>
-      <li>Hiển thị cài đặt</li>
+      <li>Trình duyệt: ${navigator.userAgent}</li>
+      <li>Ngôn ngữ: ${navigator.language}</li>
+      <li>Độ phân giải: ${window.screen.width} x ${window.screen.height}</li>
+      <li>Thời gian: ${new Date().toLocaleString()}</li>
     </ul>
   `;
 
@@ -93,10 +94,18 @@ export function button3Action() {
 
   document.body.appendChild(modal);
 
-  // Ví dụ: Lấy giá trị sử dụng GM_getValue
-  const lastButton2Click = GM_getValue('button2Clicked', null);
-  if (lastButton2Click) {
-    const lastClickTime = new Date(lastButton2Click);
-    console.log('Lần nhấn Nút 2 cuối cùng:', lastClickTime.toLocaleString());
+  // Lấy giá trị sử dụng GM_getValue
+  const lastColorChange = GM_getValue('colorChangeClicked', null);
+  if (lastColorChange) {
+    const lastChangeTime = new Date(lastColorChange);
+    console.log('Lần thay đổi màu nền cuối cùng:', lastChangeTime.toLocaleString());
+
+    // Thêm thông tin về lần thay đổi màu nền cuối cùng vào modal
+    const lastChangeInfo = document.createElement('p');
+    lastChangeInfo.style.marginTop = '15px';
+    lastChangeInfo.style.fontSize = '12px';
+    lastChangeInfo.style.color = '#6c757d';
+    lastChangeInfo.textContent = `Lần thay đổi màu nền cuối cùng: ${lastChangeTime.toLocaleString()}`;
+    modalBody.appendChild(lastChangeInfo);
   }
 }

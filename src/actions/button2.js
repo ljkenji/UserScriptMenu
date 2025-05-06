@@ -1,8 +1,8 @@
-// Hành động cho nút 2
+// Hành động cho nút Đổi màu nền
 export function button2Action() {
-  console.log('Nút 2 được nhấn');
+  console.log('Nút Đổi màu nền được nhấn');
 
-  // Ví dụ: Thay đổi màu nền trang
+  // Thay đổi màu nền trang
   const originalBackgroundColor = document.body.style.backgroundColor;
   document.body.style.backgroundColor = '#f0f8ff'; // Màu xanh nhạt
 
@@ -36,6 +36,6 @@ export function button2Action() {
     }
   }, 10000);
 
-  // Ví dụ: Lưu giá trị sử dụng GM_setValue
-  GM_setValue('button2Clicked', Date.now());
+  // Lưu giá trị sử dụng GM_setValue
+  GM_setValue('colorChangeClicked', Date.now());
 }

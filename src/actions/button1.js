@@ -1,11 +1,11 @@
-// Hành động cho nút 1
+// Hành động cho nút Thông báo
 export function button1Action() {
-  console.log('Nút 1 được nhấn');
+  console.log('Nút Thông báo được nhấn');
 
-  // Ví dụ: Hiển thị thông báo
-  alert('Hành động của Nút 1 đã được thực thi!');
+  // Hiển thị thông báo
+  alert('Chức năng Thông báo đã được kích hoạt!');
 
-  // Ví dụ: Sửa đổi nội dung trang
+  // Sửa đổi nội dung trang
   const mainContent = document.querySelector('main') || document.body;
 
   if (mainContent) {
@@ -18,7 +18,7 @@ export function button1Action() {
     notification.style.marginBottom = '15px';
     notification.style.color = '#155724';
 
-    notification.textContent = 'Hành động của Nút 1 đã được thực thi thành công!';
+    notification.textContent = 'Thông báo đã được hiển thị thành công!';
 
     // Thêm nút đóng
     const closeButton = document.createElement('button');
