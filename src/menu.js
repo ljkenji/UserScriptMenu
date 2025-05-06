@@ -6,7 +6,7 @@ export function createMenu(menuItems) {
 
   // Tạo tiêu đề menu
   const menuTitle = document.createElement('h3');
-  menuTitle.textContent = 'Menu Script Người Dùng';
+  menuTitle.textContent = 'Menu Script';
   menuTitle.className = 'user-script-menu-title';
   menuContainer.appendChild(menuTitle);
 
@@ -52,19 +52,19 @@ export function createMenu(menuItems) {
   return menuContainer;
 }
 
-// Hàm để làm cho một phần tử có thể kéo thả
+// Hàm để làm cho một phần tử có thể di chuyển
 function makeDraggable(element) {
   let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   let isDragging = false;
 
-  // Thêm thanh kéo thả
+  // Thêm thanh di chuyển
   const handle = document.createElement('div');
   handle.className = 'user-script-menu-handle';
-  handle.textContent = '≡ Kéo thả';
+  handle.textContent = '≡ Di chuyển';
 
   element.insertBefore(handle, element.firstChild);
 
-  // Thêm sự kiện mousedown cho thanh kéo thả
+  // Thêm sự kiện mousedown cho thanh di chuyển
   handle.addEventListener('mousedown', dragMouseDown);
 
   // Thêm sự kiện touchstart cho thiết bị di động

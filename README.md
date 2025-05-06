@@ -79,9 +79,14 @@ Bạn có thể tùy chỉnh giao diện bằng cách sửa đổi CSS trong fil
 
 ## Phiên bản
 
-Phiên bản hiện tại: **1.0.4**
+Phiên bản hiện tại: **1.0.5**
 
 ### Lịch sử thay đổi
+
+#### v1.0.5
+- Cập nhật tên và mô tả trong README
+- Cải thiện tài liệu hướng dẫn
+- Đổi tên "Kéo thả" thành "Di chuyển" để rõ ràng hơn
 
 #### v1.0.4
 - Đổi tên các nút để phù hợp với chức năng:
