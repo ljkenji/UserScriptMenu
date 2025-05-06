@@ -63,6 +63,46 @@ npm run build
 npm run watch
 ```
 
+### Hướng dẫn build chi tiết
+
+Khi bạn thực hiện thay đổi trong mã nguồn, bạn cần build lại dự án để tạo ra file output mới. Có nhiều cách để thực hiện điều này:
+
+#### Sử dụng npm scripts (Khuyến nghị)
+
+```bash
+# Build một lần
+npm run build
+
+# Hoặc build tự động khi có thay đổi
+npm run watch
+```
+
+#### Sử dụng webpack trực tiếp
+
+```bash
+# Build một lần
+npx webpack
+
+# Build với chế độ development
+npx webpack --mode=development
+
+# Build với chế độ production (mặc định)
+npx webpack --mode=production
+
+# Build và theo dõi các thay đổi
+npx webpack --watch
+```
+
+#### Quy trình build
+
+1. Webpack đọc file entry point (`src/main.js`)
+2. Webpack phân tích và xử lý tất cả các import và dependencies
+3. Webpack biên dịch và tối ưu hóa mã nguồn
+4. Webpack tạo ra file output (`dist/userscript.user.js`)
+5. Webpack thêm metadata từ file `userscript.meta.js` vào đầu file output
+
+Sau khi build thành công, bạn có thể cài đặt file `dist/userscript.user.js` vào Tampermonkey hoặc trình quản lý userscript khác.
+
 ## Tùy chỉnh
 
 ### Thêm nút hành động mới
@@ -79,9 +119,13 @@ Bạn có thể tùy chỉnh giao diện bằng cách sửa đổi CSS trong fil
 
 ## Phiên bản
 
-Phiên bản hiện tại: **1.0.5**
+Phiên bản hiện tại: **1.0.6**
 
 ### Lịch sử thay đổi
+
+#### v1.0.6
+- Bổ sung hướng dẫn build chi tiết trong README
+- Thêm thông tin về quy trình build và cách sử dụng webpack trực tiếp
 
 #### v1.0.5
 - Cập nhật tên và mô tả trong README

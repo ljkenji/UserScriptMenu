@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        User Script Menu
 // @name:vi     Menu Script Người Dùng
-// @version     1.0.5
+// @version     1.0.6
 // @description A customizable user script menu
 // @description:vi Menu tùy chỉnh cho userscript
 // @author      Lj Kenji
