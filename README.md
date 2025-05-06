@@ -79,9 +79,17 @@ Bạn có thể tùy chỉnh giao diện bằng cách sửa đổi CSS trong fil
 
 ## Phiên bản
 
-Phiên bản hiện tại: **1.0.2**
+Phiên bản hiện tại: **1.0.3**
 
 ### Lịch sử thay đổi
+
+#### v1.0.3
+- Cải thiện chức năng kéo thả menu:
+  - Cho phép di chuyển menu đến bất kỳ vị trí nào trên màn hình
+  - Giới hạn menu trong phạm vi màn hình
+  - Cố định kích thước menu, không cho phép thay đổi kích thước
+  - Thêm hỗ trợ cho thiết bị cảm ứng
+- Cải thiện giao diện thanh kéo thả
 
 #### v1.0.2
 - Dịch tất cả ghi chú trong mã nguồn sang tiếng Việt
